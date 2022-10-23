@@ -1,4 +1,4 @@
-# import necessary packages for mnist dataset training and testing
+# import necessary packages for training and testing
 
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import BatchNormalization
@@ -23,7 +23,7 @@ class KiNet_mlp:
     def create_cnn(width, height, depth, filters = (2,4,8), regress = False):    
         
         # filters: a tuple of progressively larger filters so that our network learn more discriminate features
-# # regress: A boolean indicating whether or not a fully-connected linear activation will be added to the CNN for regression purpose
+	# # regress: A boolean indicating whether or not a fully-connected linear activation will be added to the CNN for regression purpose
 
         # initialize the input shape and channel dimension assuming Tensorflow/ channels-last ordering (=> depth in the end)
         inputShape = (height, width, depth)
@@ -32,7 +32,7 @@ class KiNet_mlp:
         # define the model input
         inputs = Input(shape = inputShape)    
 
-#         # We loop over the filters to create CONV => RELU => BN => POOL layers. Each iteration of the loop appends these layers
+	# We loop over the filters to create CONV => RELU => BN => POOL layers. Each iteration of the loop appends these layers
 
         for (i,f) in enumerate(filters): # f is the number of filters in each iteration
 
@@ -76,7 +76,7 @@ class KiNet_mlp:
 
     def create_mlp(dim, regress = False):
 
-	# define our MLP Network: architecture dim-8-4 i.e. input dimensions (need to specify as dim), 8 neurons and 4 neurons => Here 1000 - 500
+	# define our MLP Network: architecture dim-1000-500-1 i.e. input dimensions (need to specify as dim), 1000 neurons and 500 neurons
 
         model = Sequential()
         model.add(Dense(1000, input_dim = dim, activation = "relu"))
