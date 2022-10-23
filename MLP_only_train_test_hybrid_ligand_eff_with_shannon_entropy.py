@@ -1,4 +1,4 @@
-### This script could run an MLP only model for predicting BEI values of molecules (of IC50 of Tissue Factor Pathway Inhibitor) without using Shannon entropy as descriptor and only using the MW as the sole descriptor
+### This script could run an MLP only model for predicting BEI values of molecules (ligands of Tissue Factor Pathway Inhibitor) with using Shannon entropy as a descriptor along with using the MW as the other descriptor
 
 
 # import the necessary packages
