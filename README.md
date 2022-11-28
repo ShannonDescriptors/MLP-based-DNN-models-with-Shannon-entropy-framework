@@ -11,7 +11,7 @@ Notes:
 
 (ii) MLP_only_train_test_hybrid_pchembl_MW_with_shannon_entropy.py: This script could run MLP-based deep neural network model for pchembl/MW prediction (of IC50 of Tissue Factor Pathway Inhibitor) using Shannon entropy (SMILES/SMARTS/InChiKey-based) as descriptor along with the MW as the other descriptor
 
-(iii) MLP_only_train_test_hybrid_pchembl_MW_with_shannon_entropy_smiles_smarts_inchikey_partial_shannon_smiles.py: This script could run MLP only model for pchembl/MW prediction (of IC50 of Tissue Factor Pathway Inhibitor) using combination of Shannon entropies (SMILES Shannon, SMARTS Shannon, InChiKey Shannon and SMILES partial/ fractional Shannon) and MW as descriptors. The SMILES-based fractional Shannon could add more accuracy to the model prediction.
+(iii)MLP_only_train_test_hybrid_pchembl_MW_with_shannon_entropy_smiles_smarts_inchikey_partial_shannon_smiles.py: This script could run MLP only model for pchembl/MW prediction (of IC50 of Tissue Factor Pathway Inhibitor) using combination of Shannon entropies (SMILES Shannon, SMARTS Shannon, InChiKey Shannon and SMILES partial/ fractional Shannon) and MW as descriptors. The SMILES-based fractional Shannon could add more accuracy to the model prediction.
 
 (iv) MLP_only_train_test_hybrid_ligand_eff_without_shannon_entropy.py: This script could run MLP-based deep neural network model for predicting BEI (Ligand Binding Efficiency Index) values of molecules (ligands of Tissue Factor Pathway Inhibitor) without using any Shannon entropies as descriptor and only using the MW as the sole descriptor
 
