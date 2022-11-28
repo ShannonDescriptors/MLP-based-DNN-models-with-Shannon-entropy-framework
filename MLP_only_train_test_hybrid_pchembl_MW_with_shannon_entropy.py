@@ -321,7 +321,7 @@ XtrainLabels  = XtrainTotalData.iloc[:,-1]/ (maxPrice)
 XtestLabels  = XtestTotalData.iloc[:,-1]/ (maxPrice)   
 
  
-# Just the 1st column (mol. wt.) & 2nd col (shannon entropy) as X data
+# Just the 1st column (mol. wt.) & 2nd col (SMILES Shannon entropy for this case) as X data
 XtrainData = (XtrainTotalData.iloc[:,0:2])
 XtestData = (XtestTotalData.iloc[:,0:2])
 
