@@ -1,6 +1,4 @@
-### This script could run MLP only model for pchembl/MW prediction (of IC50 of Tissue Factor Pathway Inhibitor) using Shannon entropy as descriptor and also using other descriptor (Ligand Efficiency BEI) as designed
-
-
+### This script could run MLP only model for pchembl/MW prediction (of IC50 of Tissue Factor Pathway Inhibitor) using Shannon entropy as descriptor and also using other descriptor (Ligand Efficiency BEI) as part of tandem model
 
 # import the necessary packages
 
