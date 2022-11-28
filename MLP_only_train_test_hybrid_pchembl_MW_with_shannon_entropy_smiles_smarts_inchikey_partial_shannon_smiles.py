@@ -8,7 +8,6 @@ import os
 import numpy as np
 import pandas as pd
 
-
 from KiNet_mlp import KiNet_mlp
 
 from tensorflow.keras.optimizers import Adam
@@ -44,13 +43,6 @@ df['pChEMBL Value'] = df_target_norm
 print("Shape of the pChEMBL Value/MW labels array", df_target.shape)
 
     
-#  Grab the maximum/ minimum in the label column
-maxPrice = df_target_norm.max() 
-minPrice = df_target_norm.min()
-
-
-
-
 ###------------------------------------------------------Shannon Entropy Generation: SMILES/ SMARTS/ InChiKey--------------------------------------------------------------------------------------------------
 
 ### comment this below section if SMILES Shannon is not used
@@ -472,7 +464,7 @@ for i in range(0,len( df['Smiles'])):
 fp_mol = pd.DataFrame(fp_combined)
 
 
-### constructing a new df column containng only MW, Shannon entropy values ana targets or labels
+### constructing a new df column containng only MW, Shannon entropy values (SMILES Shannon, SMARTS Shannon, InChiKey Shannon and SMILES partial/ fractional Shannon) and targets or labels
 df_1 = pd.DataFrame( df['Molecular Weight'].values)
 df_2 = pd.DataFrame(df['shannon_smiles'].values)
 df_3 = pd.DataFrame(df['shannon_smarts'].values)
