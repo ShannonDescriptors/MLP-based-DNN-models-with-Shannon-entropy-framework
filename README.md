@@ -6,7 +6,7 @@ This repository holds the codes pertaining to Fig. 1 of the article 'Harnessing 
 
 Description
 -----------
-Shannon entropy framework has been demonstrated as an efficient descriptor for regression-type machine learning problem using MLP-based deep neural networks. The specific objectives of the codes are described in the Notes section below. The basic dataset has been provided in the repository in the form of .csv files.
+Shannon entropy framework has been demonstrated as an efficient descriptor for regression-type machine learning problem using MLP-based deep neural networks. In this specific case, we model-(i) IC50 values of molecules interacting with the protein: Tissue Factor Pathway Inhibitor and (ii) BEI (Ligand Binding Efficiency Index) values of molecules or ligands of Tissue Factor Pathway Inhibitor. The specific objectives of the codes are described in the Notes section below. The basic dataset has been provided in the repository in the form of .csv files.
 
 Usage
 -----
