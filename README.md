@@ -1,4 +1,4 @@
-# MLP-based-DNN
+# MLP-based-DNN-models-using-Shannon-entropies
 
 Harnessing Shannon entropy of molecular symbols in deep neural networks to enhance prediction accuracy
 ------------------------------------------------------------------------------------------------------
@@ -6,13 +6,15 @@ This repository holds the codes pertaining to Fig. 1 of the article 'Harnessing 
 
 Description
 -----------
-Shannon entropy framework has been demonstrated as an efficient descriptor for regression-type machine learning problem. The specific objectives of the codes are described in the Notes section below. The basic dataset has been provided in the repository in the form of a .csv file.
+Shannon entropy framework has been demonstrated as an efficient descriptor for regression-type machine learning problem using MLP-based deep neural networks. The specific objectives of the codes are described in the Notes section below. The basic dataset has been provided in the repository in the form of .csv files.
 
 Usage
 -----
 1. Download or make a clone of the repository
 2. Make a new conda environment using the environment file 'mlp_dnn.yml'
 3. Run the python files directly using a python IDE or from command line
+
+Example: python MLP_only_train_test_hybrid_ligand_eff_with_shannon_entropy.py
 
 Notes
 -----
